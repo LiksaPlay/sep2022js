@@ -35,15 +35,20 @@ let arr = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
 console.log(newArr = arr.map(value => value.toString()));
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
-const nums = [11, 21, 3];
+
 // sortNums(nums,'ascending') // [3,11,21]
-console.log(sortedNums1 = nums.sort(function (a, b) {
-    return a - b;
-}));
 // sortNums(nums,'descending') // [21,11,3]
-console.log(sortedNums1 = nums.sort(function (a, b) {
-    return b - a;
-}));
+let nums = [11, 21, 3];
+const sortedNums=(direction,arr0)=>{
+    if (direction==='ascending'){
+        arr0.sort((a,b) => a-b);
+    }else if (direction==='descending'){
+        arr0.sort((a,b) => b-a);
+    }
+    return arr0;
+}
+console.log(sortedNums('ascending',nums));
+console.log(sortedNums('descending',nums));
 // - є масив
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
