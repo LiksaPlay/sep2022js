@@ -1,27 +1,12 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-// function areaT(a, b, s) {
-//     s = (a * b) / 2;
-//     document.write(`<div>areaT=${s}</div>`);
-// }
-//
-// areaT(+prompt(), +prompt());
-
+// const areaT=(a, b)=> (a * b) / 2;
+// console.log(areaT(10,10));
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-// function areaC(r, PI, s) {
-//     s = PI * r ** 2;
-//     document.write(`<div>areaC=${s}</div>`);
-// }
-//
-// areaC(+prompt(), 3.14)
-
-// - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-// function areaCyl(r, PI, h, s) {
-//     s = 2 * PI * r * h;
-//     document.write(`<div>areaCyl=${s}</div>`);
-// }
-//
-// areaCyl(+prompt(), 3.14, +prompt());
-
+// const areaC=(r, PI) =>  PI * r ** 2;
+// console.log(areaC(10, 3.14));
+// // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+// const areaCyl=(r, PI, h) => 2 * PI * r * h;
+// console.log(areaCyl(10, 3.14, 10));
 // - створити функцію яка приймає масив та виводить кожен його елемент
 // function array(arr) {
 //     for (let i = 0; i < arr.length; i++) {
@@ -29,7 +14,7 @@
 //         document.write(`<div>${arrElement}</div>`)
 //     }
 // }
-//
+
 // array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 // function paragraph(par) {
